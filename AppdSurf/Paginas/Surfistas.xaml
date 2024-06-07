@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppdSurf.Paginas.Surfistas"
+             BackgroundImageSource="fundoo.svg"
+             Title="Surfistas">
+    <ScrollView>
+    <VerticalStackLayout>
+
+        <FlexLayout>
+           <Image Source="medina.svg" WidthRequest="200"  Margin="20"/>
+           <Label Text="Gabriel Medina Pinto Ferreira, é um surfista profissional brasileiro.Sendo o primeiro brasileiro a vencer um mundial de Surf."
+            FontFamily="Poppins-SemiBold"
+            FontSize="17.5"
+            Background="#200A3D" TextColor="white" Padding="10,10,0,10" Margin="0,20,0,20"   />
+        </FlexLayout>
+        
+        
+        
+        
+
+        <FlexLayout>
+            <Image Source="pedro.svg" WidthRequest="200"  Margin="20"/>
+                <Label Text="Pedro Henrique Mota Vianna, mais conhecido como Pedro Scooby, é um surfista luso-brasileiro, adepto do freesurf."
+            FontFamily="Poppins-SemiBold"
+            FontSize="17.5"
+            Background="#200A3D" TextColor="white" Padding="10,20,0,0" Margin="0,20,0,20"   />
+        </FlexLayout>
+        
+        
+        
+
+        <FlexLayout>
+            <Image Source="italo.svg" WidthRequest="200"  Margin="20" />
+                <Label Text="Ítalo Ferreira é um surfista profissional brasileiro que está na ASP World Tour desde 2015.Primeiro campeão olímpico"
+            FontFamily="Poppins-SemiBold"
+            FontSize="17.5"
+            Background="#200A3D" TextColor="white" Padding="10,20,0,0" Margin="0,20,0,20"   />
+        </FlexLayout>
+        
+        
+        
+
+        <FlexLayout>
+            <Image Source="mineiro.svg" WidthRequest="200"  Margin="20"     ></Image>
+                <Label Text="Mineirinho, como é conhecido, foi campeão mundial em 2015, sendo o segundo brasileiro a obter este título."
+            FontFamily="Poppins-SemiBold"                      
+            FontSize="17.5"
+            Background="#200A3D" 
+            TextColor="white" 
+            Padding="10,20,0,0" 
+            Margin="0,20,0,20"   />
+        </FlexLayout>
+
+            <Frame BorderColor="#310080" CornerRadius="10" Padding="10" Margin="20,0,20,10" Background="Black">
+            <FlexLayout Direction="Row" JustifyContent="SpaceAround" >
+                <ImageButton Source="house" Clicked="ImageButton_Clicked" WidthRequest="50" HeightRequest="50"/>
+                <ImageButton Source="surf" Clicked="ImageButton_Clicked_1" WidthRequest="50" HeightRequest="50"/>
+                <ImageButton Source="prancha" Clicked="ImageButton_Clicked_2" WidthRequest="50" HeightRequest="50"/>
+                <ImageButton Source="vector" Clicked="ImageButton_Clicked_3" WidthRequest="50" HeightRequest="50"/>
+            </FlexLayout>
+</Frame>
+
+
+        </VerticalStackLayout>
+</ScrollView>
+</ContentPage>

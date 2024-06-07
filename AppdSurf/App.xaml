@@ -1,0 +1,24 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppdSurf"
+             xmlns:Pages="clr-namespace:AppdSurf.Paginas"
+             x:Class="AppdSurf.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="tituloCor">black</Color>
+            <Color x:Key="BackgroundColor">#CED2D5</Color>
+
+            <Style TargetType="ShellContent" x:Key="TitleStyle">
+                <Setter Property="Shell.TitleColor" Value="{StaticResource tituloCor}"></Setter>
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource BackgroundColor}"></Setter>
+            </Style>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+
+   
+</Application>

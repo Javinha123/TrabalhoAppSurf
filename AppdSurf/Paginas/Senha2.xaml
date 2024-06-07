@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppdSurf.Paginas.Senha2"
+             BackgroundImageSource="fundoo.svg"      
+             NavigationPage.HasNavigationBar="False"
+             Title="Login">
+    <VerticalStackLayout>
+
+        <Label
+            Text="RECUPERAÇÃO DE SENHA"
+            FontSize="27"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Margin="0,30,0,0"
+            FontFamily="Poppins-Black"
+
+            >
+
+        </Label>
+
+        <HorizontalStackLayout Margin="20,120,0,0">
+            <Label x:Name="lblSenha1" Text="Digite uma nova senha:" FontSize="20" Margin="50,30,0,0"/>
+            <ImageButton  Source="olhosenha.svg" WidthRequest="30" Margin="10,20,0,0" Clicked="ImageButton_Clicked"></ImageButton>
+        </HorizontalStackLayout>
+        <Entry x:Name="senhaview2" Placeholder="" WidthRequest="250"
+       Margin="0,0,0,20"
+       IsPassword="True"
+        Text="{Binding Senha}">
+        </Entry>
+
+        <HorizontalStackLayout Margin="20,20,0,0">
+            <Label x:Name="lblSenha2" Text="Digite novamente:" FontSize="20" Margin="50,30,0,0"/>
+            <ImageButton  Source="olhosenha.svg" WidthRequest="30" Margin="50,20,0,0" Clicked="ImageButton_Clicked_1"></ImageButton>
+
+
+        </HorizontalStackLayout>
+        <Entry x:Name="senhaview3" Placeholder="" WidthRequest="250"
+        Margin="0,0,0,20"
+        IsPassword="True"
+        Text="{Binding Senha}">
+
+        </Entry>
+
+
+
+
+
+
+
+
+
+        <Button
+                    x:Name="btnConfirmar"
+                     FontSize="22"
+                     Background="black"
+                     Clicked="btnConfirmar_Clicked"
+                     Text="CONFIRMAR"
+                    TextColor="White"
+                    WidthRequest="280"
+                    HeightRequest="60"
+                    FontFamily="Poppins-SemiBold"
+                    CornerRadius="35"
+                     Margin="0,100,0,0"
+                   />
+
+
+
+
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

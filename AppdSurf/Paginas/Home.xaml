@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppdSurf.Paginas.Home"
+             BackgroundImageSource="fundohome.svg"
+             Title="Home"
+             NavigationPage.HasNavigationBar="False">
+    <VerticalStackLayout>
+
+
+        <Frame BorderColor="#310080" CornerRadius="10" Padding="10" Margin="20,720,20,0" Background="Black">
+            <FlexLayout Direction="Row" JustifyContent="SpaceAround">
+                <ImageButton Source="house" Clicked="ImageButton_Clicked" WidthRequest="50" HeightRequest="50"/>
+                <ImageButton Source="surf" Clicked="ImageButton_Clicked_1" WidthRequest="50" HeightRequest="50"/>
+                <ImageButton Source="prancha" Clicked="ImageButton_Clicked_2" WidthRequest="50" HeightRequest="50"/>
+                <ImageButton Source="vector" Clicked="ImageButton_Clicked_3" WidthRequest="50" HeightRequest="50"/>
+            </FlexLayout>
+        </Frame>
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

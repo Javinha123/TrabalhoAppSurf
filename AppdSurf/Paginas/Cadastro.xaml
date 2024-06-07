@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppdSurf.Paginas.Cadastro"
+             BackgroundImageSource="fundoo.svg"      
+             NavigationPage.HasNavigationBar="False"
+             Title="Login">
+    <VerticalStackLayout>
+
+        <Label
+            Text="CADASTRO:"
+            FontSize="30"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontFamily="Poppins-Black"
+            >
+
+        </Label>
+
+        <HorizontalStackLayout HorizontalOptions="Center" Margin="0,0,0,0">
+            <Button     
+                x:Name="btnlogin"
+                FontSize="18"
+                Clicked="btnlogin_Clicked"
+                Text="Login"
+                TextColor="Gray"
+                BackgroundColor="Transparent" 
+                >
+            </Button>
+            
+            <Button     
+             x:Name="btncadastro"
+             FontSize="18"
+             Clicked="btncadastro_Clicked"
+             Text="Cadastro"
+             TextColor="Black"
+             BackgroundColor="Transparent"
+           >
+            </Button>
+            
+        </HorizontalStackLayout>
+
+
+        <HorizontalStackLayout Margin="20,20,0,0">
+            <Image Source="vector.svg" WidthRequest="30" Margin="49,20,10,0"></Image>
+            <Label x:Name="lblNome" Text="Nome" FontSize="20" Margin="0,20,0,0"/>
+
+        </HorizontalStackLayout>
+        <Entry Placeholder="" WidthRequest="250"
+            Margin="0,20,0,20"
+            Keyboard="Text"
+            x:Name="txtNome" 
+            Text="{Binding Nome}">
+        </Entry>
+
+        <HorizontalStackLayout Margin="20,20,0,0">
+            <Image Source="mail.svg" WidthRequest="30" Margin="49,0,10,0"></Image>
+            <Label x:Name="lblEmail" Text="E-mail" FontSize="20" Margin="0,0,0,0"/>
+
+        </HorizontalStackLayout>
+        <Entry Placeholder="" WidthRequest="250"
+               Margin="0,0,0,20"
+               Keyboard="Email"
+               x:Name="txtEmail" 
+               Text="{Binding Email}">
+      
+        </Entry>
+
+
+
+
+
+        <HorizontalStackLayout Margin="20,20,0,0">
+            <Image Source="lock.svg" WidthRequest="30" Margin="49,20,10,0"></Image>
+            <Label Text="Senha" FontSize="20" Margin="0,30,0,0"/>
+            <ImageButton x:Name="olho" Source="olhosenha.svg" WidthRequest="30" Margin="115,20,0,0" Clicked="olho_Clicked_1"></ImageButton>
+
+
+        </HorizontalStackLayout>
+        <Entry x:Name="senhaview2" Placeholder="" WidthRequest="250"
+            Margin="0,0,0,20"
+            IsPassword="True"
+            Text="{Binding Senha}">
+       
+        </Entry>
+
+
+
+        <Button
+                    BorderColor="#310080"
+                    BorderWidth="3"
+                    x:Name="btnCadastrese"
+                    FontSize="22"
+                    Background="black"
+                    Clicked="btnCadastrese_Clicked"
+                    Text="CADASTRE-SE"
+                    TextColor="White"
+                    WidthRequest="280"
+                    CornerRadius="40"
+                    Margin="0,80,0,0"
+                    FontFamily="Poppins-SemiBold"/>
+
+                   
+                  
+
+       
+
+
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
